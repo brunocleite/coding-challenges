@@ -1,9 +1,14 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>co.brunoleite</groupId>
-  <artifactId>coding-challenges-java</artifactId>
+  <groupId>co.brunoleite.coding-challenges</groupId>
+  <artifactId>java</artifactId>
   <version>1</version>
+
+  <properties>
+    <java.version>22</java.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>

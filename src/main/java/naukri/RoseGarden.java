@@ -11,9 +11,6 @@ import java.util.List;
 public class RoseGarden {
 
   public static int roseGarden(int[] arr, int k, int m) {
-    List<Integer> list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
-    list.stream().filter(i -> i % 2 == 0).count();
-
     int n = arr.length;
     if (m * k > n) {
       return -1;
