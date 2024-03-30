@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+//https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=true
 /**
- * Climbing the Leaderboard
- * Level: Medium
- * <a href="https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=true">...</a>
+ * Climbing the Leaderboard Level: Medium
  * Score:
  */
 public class ClimbingLeaderboard {
@@ -39,8 +38,8 @@ public class ClimbingLeaderboard {
           break;
         }
       }
-      if(previousSize == playerRankList.size()){
-        playerRankList.add(currentRank+1);
+      if (previousSize == playerRankList.size()) {
+        playerRankList.add(currentRank + 1);
       }
     }
     return playerRankList;

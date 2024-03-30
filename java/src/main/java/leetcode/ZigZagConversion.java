@@ -1,6 +1,10 @@
 package leetcode;
 
 // https://leetcode.com/problems/zigzag-conversion/?envType=study-plan-v2&envId=top-interview-150
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Zigzag Conversion -- Level: Medium -- Score: Beats 99.45% of users with Java
  */
@@ -13,12 +17,17 @@ class ZigZagConversion {
     if (numRows == 1) {
       return s;
     }
+    char[] charArray = s.toCharArray();
+    List<Character> charList = new ArrayList<>();
+    for (char c : charArray) {
+      charList.add(c);
+    }
     for (int i = 0; i < numRows; i++) {
 
       //First and last rows
       if (i == 0 || i == numRows - 1) {
         for (int j = i; j < sizeLimit; j += (numRows + numRows - 2)) {
-          outputString.append(s.charAt(j));
+          outputString.append(charList.get(j));
         }
         continue;
       }
@@ -29,7 +38,7 @@ class ZigZagConversion {
       int skip2 = i * 2;
       boolean isSkip1 = false;
       for (int j = i; j < sizeLimit; j += isSkip1 ? skip1 : skip2) {
-        outputString.append(s.charAt(j));
+        outputString.append(charList.get(j));
         isSkip1 = !isSkip1;
       }
     }

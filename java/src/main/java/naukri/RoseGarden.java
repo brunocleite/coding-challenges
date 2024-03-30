@@ -1,11 +1,8 @@
 package naukri;
 
-import java.util.List;
-
+// https://www.naukri.com/code360/problems/rose-garden_2248080
 /**
- * Rose Garden
- * Level: Moderate
- * <a href="https://www.naukri.com/code360/problems/rose-garden_2248080">...</a>
+ * Rose Garden Level: Moderate
  * Score: 72/80
  */
 public class RoseGarden {
