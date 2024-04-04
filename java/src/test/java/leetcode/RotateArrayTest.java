@@ -32,4 +32,11 @@ class RotateArrayTest {
     new RotateArray().rotate(nums, 3);
     assertArrayEquals(new int[]{2,1}, nums);
   }
+
+  @Test
+  void testCase1BestSolution() {
+    int[] nums = {1, 2, 3, 4, 5, 6, 7};
+    new RotateArray().rotateBestSolution(nums, 3);
+    assertArrayEquals(new int[]{5, 6, 7, 1, 2, 3, 4}, nums);
+  }
 }
